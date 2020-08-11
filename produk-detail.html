@@ -133,36 +133,38 @@
                   <div class="card-body">
                     <div class="container">
                       <div class="row">
+
                         <div class="col-md-4">
                           <div class="gallery-container">
                             <img src="/images/product-card-1.png" class="w-100" alt="">
-                            <img src="/images/icon-delete.svg" alt="">
+                            <a href="" class="delete-gallery">
+                              <img src="/images/icon-delete.svg" alt="">
+                            </a>
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="gallery-container">
                             <img src="/images/product-card-1.png" class="w-100" alt="">
-                            <img src="/images/icon-delete.svg" alt="">
+                            <a href="" class="delete-gallery">
+                              <img src="/images/icon-delete.svg" alt="">
+                            </a>
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="gallery-container">
                             <img src="/images/product-card-1.png" class="w-100" alt="">
-                            <img src="/images/icon-delete.svg" alt="">
+                            <a href="" class="delete-gallery">
+                              <img src="/images/icon-delete.svg" alt="">
+                            </a>
                           </div>
                         </div>
-                        <div class="col-md-4">
-                          <div class="gallery-container">
-                            <img src="/images/product-card-1.png" class="w-100" alt="">
-                            <img src="/images/icon-delete.svg" alt="">
+                        <div class="col-12">
+                          <input type="file" id="file" style="display: none;" multiple>
+                          <div class="btn btn-secondary btn-block mt-3" onClick="thisFileUpload()">
+                            Add Photo
                           </div>
                         </div>
-                        <div class="col-md-4">
-                          <div class="gallery-container">
-                            <img src="/images/product-card-1.png" class="w-100" alt="">
-                            <img src="/images/icon-delete.svg" alt="">
-                          </div>
-                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -186,7 +188,11 @@
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
-    })
+    });
+
+    function thisFileUpload() {
+      document.getElementById("file").click();
+    }
   </script>
   <script src="/script/navbar-scroll.js"></script>
   <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>

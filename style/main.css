@@ -11298,9 +11298,11 @@ footer p {
   background: none;
 }
 
-.page-dashboard .gallery-container {
+.gallery-container .delete-gallery {
   display: block;
   position: absolute;
+  top: -10px;
+  right: 0;
 }
 
 .component-categories {
