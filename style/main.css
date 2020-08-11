@@ -11286,6 +11286,21 @@ footer p {
   color: #9191A9;
 }
 
+.page-dashboard .product-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #C5C5C5;
+}
+
+.page-dashboard .product-subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0C0D36;
+  margin-bottom: 25px;
+}
+
 .page-dashboard .nav-pills .nav-link {
   font-size: 18px;
   color: #9191a9;
@@ -11298,7 +11313,7 @@ footer p {
   background: none;
 }
 
-.gallery-container .delete-gallery {
+.page-dashboard .gallery-container .delete-gallery {
   display: block;
   position: absolute;
   top: -10px;
